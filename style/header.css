@@ -1,0 +1,129 @@
+/*****Structure*****/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 0 0;
+}
+
+#main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*****Header*****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 25px 5px;
+}
+
+/*LOGO*/
+
+#booki-phone {
+    display: none;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+/*MENU NAV*/
+
+nav ul {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav a {
+    padding: 37px 15px 37px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-top: 4px #0065FC solid;
+    color: #0065FC;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    #main {
+        font-family: 'Raleway', sans-serif;
+        max-width: 992px;
+    }
+    header {
+        margin: 25px 0 25px 25px;
+    }
+    header img {
+        height: auto;
+        width: auto;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        font-family: 'Raleway', sans-serif;
+        max-width: 768px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    header {
+        display: block;
+    }
+    header img {
+        display: none;
+    }
+    #booki-phone {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+    nav ul {
+        font-size: 30px;
+        font-weight: normal;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    nav a {
+        display: block;
+        padding: 5px 15px 10px 15px;
+        text-decoration: none;
+        color: black;
+        border-bottom: 4px #F2F2F2 solid;
+    }
+    nav a:hover {
+        border-top: hidden;
+        border-bottom: 4px #0065FC solid;
+    }
+    nav li {
+        width: 50%;
+        text-align: center;
+    }
+}

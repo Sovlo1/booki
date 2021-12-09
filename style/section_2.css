@@ -1,0 +1,353 @@
+/*****Résultats recherche*****/
+
+/*Hébergements*/
+
+#search-results {
+    display: flex;
+    margin: 0 5px 50px 5px;
+}
+
+#left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    max-height: max-content;
+    padding: 20px 30px 20px 50px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 25px;
+    width: 80%;
+}
+
+#search-results a {
+    text-decoration: none;
+}
+
+#inn-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.inn-card {
+    width: 30%;
+    background-color: white;
+    border: 5px white solid;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto 30px 0;
+    box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.514);
+}
+
+.inn-card:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px rgb(165, 165, 165);
+}
+
+.inn-image {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 125px;
+}
+.inn2 {
+    object-position: 0% 80%;
+}
+.inn3 {
+    object-position: 0% 100%;
+}
+.inn4 {
+    object-position: 0% 80%;
+}
+.inn6 {
+    object-position: 0% 65%;
+}
+.inn-about {
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+.inn-about h3 {
+    color: black;
+    font-size: 16px;
+    margin: 0 0 0 0;
+}
+
+.inn-about p {
+    color: black;
+    font-size: 14px;
+    margin: 0 0 0 0;
+}
+
+.inn-about span {
+    margin: 0 0 0 0;
+}
+
+.blue-star-icon {
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.grey-star-icon {
+    color: #F2F2F2;
+    font-size: 12px;
+}
+
+#left-side h3 {
+    margin: 0 0 0 0;
+}
+
+/*Populaires*/
+
+aside {
+    background-color: #F2F2F2;
+    height: auto;
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 0;
+}
+
+#most-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#most-popular i {
+    font-size: 22px;
+}
+
+.popular-card {
+    width: 100%;
+    background-color: white;
+    border: 5px white solid;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto 30px 0;
+    box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.514);
+}
+
+.popular-card:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px rgb(165, 165, 165);
+}
+
+.popular-inn {
+    display: flex;
+}
+
+.popular-img {
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    width: 35%;
+    height: 140px;
+}
+
+.popular-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.popular-about h3 {
+    color: black;
+    font-size: 16px;
+    margin: 0 0 0 0;
+}
+
+.popular-about p {
+    color: black;
+    font-size: 14px;
+    margin: 0 0 0 0;
+}
+
+.popular-about i {
+    margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    #search-results {
+        display: block;
+        margin: 0 0 0 0;
+    }
+    #left-side {
+        display: block;
+        background-color: #F2F2F2;
+        padding: 20px 20px 20px 50px;
+        border-radius: 0 0 0 0;
+        padding: 20px 50px 20px 50px;
+        margin-right: 0px;
+        width: auto;
+    }
+    #left-side h2 {
+        font-size: 26px;
+    }
+    #inn-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .inn-card {
+        width: 48%;
+        background-color: white;
+        border: 5px white solid;
+        border-radius: 20px 20px 20px 20px;
+        margin: 0 0 30px 0;
+        box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.514);
+    }
+    .inn-card:hover {
+        transition: 0.5s;
+        box-shadow: 2px 2px 10px rgb(165, 165, 165);
+    }
+    .inn-image {
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 300px;
+    }
+    #left-side h3 {
+        font-size: 20px;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+        padding: 20px 50px 20px 50px;
+        border-radius: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    aside h2 {
+        font-size: 26px;
+    }
+    #most-popular i {
+        font-size: 26px;
+    }
+    #most-popular {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+    }
+    #popular-inside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .popular-card {
+        width: 48%;
+        background-color: white;
+        border: 5px white solid;
+        margin: 0 0 30px 0;
+    }
+    .popular-last {
+        width: 100%;
+    }
+    .popular-img {
+        width: 45%;
+        height: 300px;
+    }
+    .popular-about p {
+        font-size: 18px;
+    }
+    .popular-about h3 {
+        font-size: 22px;
+    }
+    .popular-about i {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #search-results {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 0 0 0;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 6% 20px 6%;
+        border-radius: 0 0 0 0;
+    }
+    .popular-card {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .popular-img {
+        width: 45%;
+        height: 250px;
+    }
+    .popular-about {
+        padding: 20px;
+    }
+    aside h2 {
+        font-size: 32px;
+    }
+    #most-popular i {
+        font-size: 32px;
+    }
+    .popular-about p {
+        font-size: 20px;
+    }
+    .popular-about h3 {
+        font-size: 26px;
+    }
+    .popular-about i {
+        font-size: 20px;
+    }
+    #left-side {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        padding: 20px 30px 20px 30px;
+        border-radius: 0 0 0 0;
+        margin-right: 0px;
+        width: auto;
+    }
+    #inn-list {
+        flex-direction: column;
+    }
+    .inn-card {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .inn-card:hover {
+        transition: 0.5s;
+        box-shadow: 2px 2px 10px rgb(165, 165, 165);
+    }
+    .inn-image {
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 250px;
+    }
+    .inn1 {
+        object-position: 0% 70%;
+    }
+    .inn2 {
+        object-position: 0% 80%;
+    }
+    .inn3 {
+        object-position: 0% 90%;
+    }
+    .inn4 {
+        object-position: 0% 70%;
+    }
+    .inn6 {
+        object-position: 0% 65%;
+    }
+    .inn-about {
+        padding: 15px;
+    }
+    #left-side h2 {
+        font-size: 32px;
+    }
+    #left-side h3 {
+        font-size: 26px;
+    }
+    #left-side p {
+        font-size: 20px;
+    }
+    #left-side i {
+        font-size: 20px;
+    }
+}

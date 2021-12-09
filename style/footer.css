@@ -1,0 +1,109 @@
+/*****Footer*****/
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #f2f2f2;
+}
+
+#about div {
+    width: 25%;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+footer ul {
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul a:hover{
+    transition: 0.3s;
+    color: #0065FC;
+}
+
+footer li {
+    margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    #about {
+        max-width: 992px;
+        margin: 20px 0 0 0;
+        padding: 0 10px 0 10px;
+    }
+    #about h3 {
+        font-size: 20px;
+    }
+    footer ul {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        max-width: 768px;
+        padding: 20px 30px 20px 30px;
+    }
+    #about div {
+        width: 100%;
+    }
+    footer ul {
+        font-size: 26px;
+    }
+    footer h3 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.coeur_solide {
+    font-size: 32px;
+    background-color: #f2f2f2;
+    color: transparent;
+}
+
+.coeur_regular {
+    font-size: 32px;
+    color: black;
+}
+
+.coeur:hover > .coeur_regular {
+    color: rgb(134, 0, 123);
+}
+
+.coeur:active > .coeur_solide {
+    animation: remplissage 1s forwards
+}
+
+@keyframes remplissage {
+    0% {
+        transform-origin: bottom;
+        transform: scale(0);
+        color: rgb(134, 0, 123);
+    }
+    66% {
+        transform: scale(1.1);
+        color: rgb(134, 0, 123);
+    }
+    100% {
+        transform: scale(1);
+        color: rgb(134, 0, 123);
+    }
+}
